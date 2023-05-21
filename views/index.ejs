@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pagina web de ejemplo, primera página dde prueba</title>
+</head>
+<body>
+  <h1>Tabla de datos</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>DNI</th>
+        <!-- Agrega más columnas según tu tabla -->
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(function(row) { %>
+        <tr>
+          <td><%= row.idalumno %></td>
+          <td><%= row.nombre %></td>
+          <td><%= row.apellido %></td>
+          <td><%= row.dni %></td>
+          <!-- Agrega más columnas según tu tabla -->
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
