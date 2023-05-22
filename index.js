@@ -8,7 +8,6 @@ const fs = require("fs");
 const dbConfig = {
   host: 'web-server-prueba.mysql.database.azure.com',
   user: 'David',
-  password: 'S3naqu3rib',
   database: 'colegio',
   port: 3306,
   ssl: { 
